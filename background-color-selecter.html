@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>background selecter</title>
+	
+	<meta charset="UTF-8" />
+	
+	<meta name="description" content="this is all colors" />
+	
+	<meta name="keywords" content="html colours,CSS colours,web designing colours" />
+	
+</head>
+
+<body id="body">
+
+<select id="colors" onchange="color();" >
+	<optgroup label="colours"></optgroup>
+	<option value="" selected disabled hidden>select a background colour</option>
+		<option value="red">red</option>
+		<option value="blue">blue</option>
+		<option value="gray">gray</option>
+		<option value="black">black</option>
+		<option value="dodgerblue">dodgerblue</option>
+		<option value="lightgreen">lightgreen</option>
+		<option value="violet">violet</option>
+		<option value="yellow">yellow</option>	
+		<option value="maroon">maroon</option>
+		<option value="royalblue">royalblue</option>
+		<option value="aliceblue">aliceblue</option>
+		<option value="orange">orange</option>
+		<option value="aqua">aqua</option>
+		<option value="azure">azure</option>
+		<option value="navy">navy</option>
+		<option value="magenta">magenta</option>
+		<option value="brown">brown</option>
+		<option value="darkturquoise">darkturquoise</option>
+		<option value="cyan">cyan</option>
+		<option value="darkcyan">darkcyan</option>
+		<option value="dimgray">dimgray</option>
+		<option value="forestgreen">forestgreen</option>
+		<option value="darkslategray">darkslategray</option>
+		<option value="orangered">orangered</option>
+		<option value="ghostwhite">ghostwhite</option>
+		<option value="deepskyblue">deepskyblue</option>
+		<option value="deeppink">deeppink</option>
+		<option value="darkviolet">darkviolet</option>
+		<option value="darkgreen">darkgreen</option>
+		<option value="lime">lime</option>
+		<option value="mediumblue">mediumblue</option>
+
+</select>
+<br><br><hr><br><br>
+
+</body>
+
+<script type="text/javascript">
+
+	function color(){
+	
+	var option=document.getElementById("colors").value;
+	var body=document.getElementById("body");
+	body.style.background=option;
+	}
+	
+</script>
+</html>
